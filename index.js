@@ -18,7 +18,6 @@ Bun.serve({
 async function resize(url) {
     const preset = "pr:sharp"
     const src = url.pathname.split("/").slice(2).join("/");
-    console.log('Resizing: ', src);
     const origin = new URL(src).hostname;
 
     const allowed = ALLOWED_DOMAINS.filter(domain => {
