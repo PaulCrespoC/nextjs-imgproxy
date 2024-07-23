@@ -27,7 +27,7 @@ async function resize(url) {
     })
 
     if (!allowed.length) {
-        return new Response(`Domain (${origin}) not allowed. More details here: https://github.com/coollabsio/next-image-transformation`, {status: 403});
+        return new Response(`Domain (${origin}) not allowed.`, {status: 403});
     }
 
     const width = url.searchParams.get("width") || 0;
