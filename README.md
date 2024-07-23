@@ -1,0 +1,1 @@
+## Based of https://github.com/coollabsio/next-image-transformation
